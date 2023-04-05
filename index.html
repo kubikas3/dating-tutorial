@@ -4,34 +4,32 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Ar nepavargote, kad didžiają laiko dalį tenka būti vieniems ir neturite su kuo pasikalbėti? Ar apsikabinti? Ar pasibučiuoti? Galime garantuoti, kad išgirdus šiuos patarimus antrają pusę susirasite jau Rytoj!">
 	<link rel="stylesheet" href="styles.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<title>Kauliuko ridenimo simulatorius</title>
-	<meta name="description" content="Pats tikroviškiausias kauliuko ridenimo simuliatorius visoje istorijoje!">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<title>Dešimt patarimų, kaip susirasti antrają puse</title>
 </head>
 
-<body>
-	<div id="secret" hidden>
-		<h1 id="title">Apgailestaujame, bet Jūs buvote Rikridenta(s)... Riko Astlio brolio dvynio, kuris jau 20 metų gyvena
+<body oncontextmenu="return false;">
+	<section id="secret" hidden>
+		<h1 id="title">Apgailestaujame, bet Jūs buvote rikidenta(s) Riko Astlio brolio dvynio, kuris jau 20 metų gyvena
 			Lietuvoje</h1>
-		<video id="video" loop="loop" playsinline oncontextmenu="return false;" preload="auto">
-			<source src="assets/video.mp4" type="video/mp4">
-		</video>
-	</div>
-	<div id="dice-container">
-		<div class="dice">
-			<div class="side one"></div>
-			<div class="side two"></div>
-			<div class="side three"></div>
-			<div class="side four"></div>
-			<div class="side five"></div>
-			<div class="side six"></div>
+		<div id="video-container">
+			<video id="video" loop="loop" preload="auto" playsinline>
+				<source src="assets/video.mp4" type="video/mp4">
+			</video>
 		</div>
-		<button id="button" type="button" class="btn btn-primary">Ridenti kauliuka</button>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	</section>
+	<section id="tutorial">
+		<p class="lead">Ar nepavargote, kad didžiają laiko dalį tenka būti vieniems ir neturite su kuo pasikalbėti? Ar
+			apsikabinti?
+			Ar pasibučiuoti? Ne problema! Spauskite tęsti ir antrają pusę susirasite jau Rytoj!</p>
+		<button id="button" class="btn btn-primary">Tęsti</button>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+		integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
 		crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </body>
